@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Civil Service Exam Practice Test - Sentence Structure</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+    line-height: 1.6;
+  }
+  .question {
+    margin-bottom: 20px;
+  }
+  .answers {
+    list-style: none;
+    padding: 0;
+  }
+  .answers li {
+    margin: 5px 0;
+  }
+  .submit-btn {
+    margin-top: 20px;
+  }
+  .result {
+    margin-top: 30px;
+    padding: 15px;
+    border-top: 2px solid #ccc;
+  }
+  .correct {
+    color: green;
+    font-weight: bold;
+  }
+  .incorrect {
+    color: red;
+    font-weight: bold;
+  }
+  .explanation {
+    margin-top: 20px;
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+  }
+</style>
+</head>
+<body>
+
+<h1>CIVIL SERVICE EXAM PRACTICE TEST</h1>
+<h3>PREPARED BY: CSE LEARNING ESSENTIALS</h3>
+<h2>SECTION 1: VERBAL ABILITY</h2>
+<h3>PART 4: SENTENCE STRUCTURE</h3>
+<p><strong>PRACTICE TEST</strong> | <strong>10-ITEM TEST</strong> | <strong>PASSING SCORE: 8</strong></p>
+
+<p><em>Directions:</em> Choose the best sentence that follows correct grammar and proper sentence structure.</p>
+
+<form id="quiz-form">
+  <!-- Questions -->
+  <!-- Repeat structure for each question -->
+  <!-- Only the questions and choices -->
+  <script>
+    const questions = [
+      ["Having finished the assignment, the TV was turned on.", 
+       "Having finished the assignment, I turned on the TV.", 
+       "Turning on the TV, having finished the assignment.", 
+       "The assignment was finished, turning on the TV."],
+      ["Walking through the park, the flowers were in full bloom.", 
+       "Walking through the park, we saw the flowers in full bloom.", 
+       "Walking through the park, full bloom of flowers.", 
+       "The flowers walking through the park were in full bloom."],
+      ["Improving his results, the experiment was repeated several times.", 
+       "To improve his results, several times the experiment was repeated.", 
+       "To improve his results, he repeated the experiment several times.", 
+       "The improvement of his results, repeating the experiment several times."],
+      ["While reading the book, the phone rang loudly.", 
+       "While reading the book, loudly the phone rang.", 
+       "While reading the book, I heard the phone ring loudly.", 
+       "While reading the book, the ringing of the phone was loud."],
+      ["After reading the instructions carefully, the experiment was completed successfully by the students.", 
+       "After reading the instructions carefully, the students completed the experiment successfully.", 
+       "After reading the instructions carefully, completing the experiment was successful.", 
+       "After reading the instructions carefully, the successful experiment was completed."],
+      ["While driving to the office in heavy traffic, the documents were reviewed mentally for the meeting.", 
+       "While driving to the office in heavy traffic, the mental review of the documents was completed.", 
+       "While driving to the office in heavy traffic, I reviewed the documents mentally for the meeting.", 
+       "While driving to the office in heavy traffic, reviewing the documents was done mentally."],
+      ["To prepare for the final presentation at the conference, the slides were carefully organized and rehearsed multiple times.", 
+       "To prepare for the final presentation at the conference, carefully organizing and rehearsing the slides was done.", 
+       "To prepare for the final presentation at the conference, the slides were organized and rehearsed carefully.", 
+       "To prepare for the final presentation at the conference, we carefully organized and rehearsed the slides multiple times."],
+      ["While waiting for the results of the application process, several job offers were considered and compared carefully.", 
+       "While waiting for the results of the application process, considering and comparing job offers was done carefully.", 
+       "While waiting for the results of the application process, I considered and compared several job offers carefully.", 
+       "While waiting for the results of the application process, the comparison of job offers was careful."],
+      ["After working late into the night to meet the deadline, the completed report was submitted to the manager the next morning.", 
+       "After working late into the night to meet the deadline, submitting the report to the manager was done the next morning.", 
+       "After working late into the night to meet the deadline, I submitted the completed report to the manager the next morning.", 
+       "After working late into the night to meet the deadline, the report was submitted by the manager the next morning."],
+      ["While walking through the newly renovated library, the arrangement of the books impressed the visitors.", 
+       "While walking through the newly renovated library, the visitors were impressed by the arrangement of the books.", 
+       "While walking through the renovated new library, the impressive arrangement of books.", 
+       "While walking through the newly renovated library, the books impressed the arrangement of the visitors."]
+    ];
+    const correctAnswers = ["B","B","C","C","B","C","D","C","C","B"];
+  </script>
+
+  <div id="questions-container"></div>
+
+  <div class="submit-btn">
+    <button type="button" onclick="submitQuiz()">Submit</button>
+  </div>
+</form>
+
+<div id="result" class="result" aria-live="polite"></div>
+
+<div id="explanation" class="explanation" style="display:none;">
+  <h3>Answer Explanations:</h3>
+  <p>See the explanations and correct structure of sentences below:</p>
+  <ol>
+    <li>B – The opening phrase “Having finished the assignment” is a participial phrase that modifies the subject that comes immediately after it. In B, the subject is I, and it’s clear that I finished the assignment.
+A. This is a dangling modifier, because it suggests the TV finished the assignment.
+C. This is a fragment, not a complete sentence — there’s no main clause.
+D. Awkward and incorrect — suggests the assignment is turning on the TV.
+</li>
+    <li>B – The opening phrase “Walking through the park” is a participial phrase that must describe the subject of the main clause. In B, the subject is we, and it’s clear that we were walking.
+A. This is a dangling modifier, because it suggests the flowers were walking.
+C. This is a fragment — no complete thought or subject.
+D. Awkward and illogical — flowers don’t walk.
+</li>
+    <li>C – The opening phrase “To improve his results” is an infinitive phrase expressing purpose. It must logically refer to the subject of the main clause. In C, the subject is he, and it makes sense: he repeated the experiment to improve his results.
+A. Dangling modifier, because it suggests the experiment was improving his results on its own.
+B. Still a dangling modifier — the experiment didn’t have the intention to improve the results.
+D. This is a fragment, not a complete sentence.
+</li>
+    <li>C – The introductory clause “While reading the book” must refer logically to the subject of the main clause — the one doing the reading. In C, the subject is I, which makes perfect sense: I was reading the book when I heard the phone ring.
+A.  Dangling modifier — suggests the phone was reading the book.
+B.  Same dangling error as A, and awkward word order.
+D.  Illogical — suggests the ringing of the phone was reading the book.
+</li>
+    <li>B – The phrase “After reading the instructions carefully” is a modifier — it describes who did the reading. In sentence B, the students come immediately after the modifier, so it’s clear that the students were the ones who read the instructions.
+In A, C, and D, the modifier is left “dangling” because the subject immediately following it is not a person who can read (the experiment or completing the experiment).
+A. The experiment didn’t read the instructions — this is a dangling modifier.
+C. Dangling modifier — “completing the experiment” didn’t read the instructions, and the sentence is also awkward.
+D. Dangling modifier — the “successful experiment” didn’t read the instructions.
+</li>
+    <li>C – The introductory clause “While driving to the office in heavy traffic” needs to logically describe the subject of the main clause — the one doing the driving. In C, the subject is I, which makes sense: I was driving and I mentally reviewed the documents.
+A. Dangling modifier — it illogically implies the documents were driving.
+B. Same dangling problem — suggests the mental review was driving.
+D. Awkward and illogical — it suggests reviewing the documents was driving.
+</li>
+    <li>D – The introductory phrase “To prepare for the final presentation at the conference” must logically refer to the subject of the main clause. In D, the subject is we, which makes sense: we organized and rehearsed the slides to prepare for the presentation.
+A. Dangling modifier — suggests the slides were preparing for the presentation.
+B. Awkward and impersonal, and still no clear subject doing the preparing.
+C. Same issue as A — suggests the slides were preparing.
+</li>
+    <li>C – The opening clause “While waiting for the results of the application process” must logically refer to the subject of the main clause — the one who was waiting. In C, the subject is I, which is correct: I was waiting, and I considered and compared offers.
+A. Dangling modifier — makes it sound like the job offers were waiting.
+B. Wordy, awkward, and the subject is unclear.
+D. Illogical — suggests the comparison was waiting.
+</li>
+    <li>C – The introductory phrase “After working late into the night to meet the deadline” must logically refer to the subject of the main clause — the one who was working. In C, the subject is I, which makes sense: I worked late and then submitted the report.
+A. Dangling modifier — it makes it sound like the report was working late.
+B. Awkward, wordy, and lacks a clear subject doing the action.
+D. Illogical — it suggests the manager worked late.
+</li>
+    <li>B – The introductory phrase “While walking through the newly renovated library” must logically describe the subject of the main clause — the ones who were walking. In B, the subject is the visitors, which makes sense: the visitors were walking and were impressed.
+A. Dangling modifier — suggests the arrangement of the books was walking.
+C. Incomplete sentence — it’s just a fragment, no main verb.
+D. Nonsensical — it suggests the books impressed the arrangement of the visitors.
+</li>
+  </ol>
+</div>
+
+<div class="social-link">
+  <p>Follow us on <a href="https://www.facebook.com/cselearningessentials/" target="_blank">Facebook</a> for more updates!</p>
+  <p>Subscribe to our YouTube Channel <a href="https://www.youtube.com/@cselearningessentialsph2023" target="_blank">here</a> for more content!</p>
+</div>
+
+<div class="advertisement">
+  <img src="images/advertisement.png" alt="Civil Service E-book" style="width: 100%; max-width: 400px; display: block; margin: 0 auto 15px auto; border-radius: 5px;">
+  <p>Avail our latest Civil Service Exam Reviewer E-books. Direct message us for more details!</p>
+</div>
+
+<script>
+  const container = document.getElementById("questions-container");
+
+  questions.forEach((choices, idx) => {
+    const qNum = idx + 1;
+    const div = document.createElement("div");
+    div.classList.add("question");
+    div.innerHTML = `<p>${qNum}. Choose the correct sentence:</p>`;
+    const ul = document.createElement("ul");
+    ul.classList.add("answers");
+
+    choices.forEach((text, i) => {
+      const li = document.createElement("li");
+      const letter = String.fromCharCode(65 + i);
+      li.innerHTML = `<label><input type="radio" name="q${qNum}" value="${letter}"> ${letter}) ${text}</label>`;
+      ul.appendChild(li);
+    });
+
+    div.appendChild(ul);
+    container.appendChild(div);
+  });
+
+  function submitQuiz() {
+    document.querySelectorAll('.correct, .incorrect').forEach(el => {
+      el.classList.remove('correct', 'incorrect');
+    });
+
+    let score = 0;
+    let resultHTML = "";
+
+    for (let i = 1; i <= 10; i++) {
+      const selected = document.querySelector(`input[name="q${i}"]:checked`);
+      if (selected) {
+        if (selected.value === correctAnswers[i-1]) {
+          selected.parentElement.classList.add("correct");
+          score++;
+          resultHTML += `<p class="correct">Q${i}: Correct</p>`;
+        } else {
+          selected.parentElement.classList.add("incorrect");
+          resultHTML += `<p class="incorrect">Q${i}: Incorrect. Correct answer: ${correctAnswers[i-1]}</p>`;
+        }
+      } else {
+        resultHTML += `<p class="incorrect">Q${i}: Not answered. Correct answer: ${correctAnswers[i-1]}</p>`;
+      }
+    }
+
+    const status = score >= 8 ? "Passed ✅" : "Failed ❌";
+    document.getElementById("result").innerHTML = `<h3>Your Score: ${score} / 10 - ${status}</h3>${resultHTML}`;
+    document.getElementById("explanation").style.display = "block";
+    document.getElementById("result").scrollIntoView({ behavior: "smooth" });
+  }
+</script>
+
+</body>
+</html>
